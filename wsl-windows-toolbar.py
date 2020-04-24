@@ -193,7 +193,7 @@ def cli(install_directory,
             logger.warning("Failed to find icon for %s", path)
             ico_file_winpath = None
 
-        arguments = "-d %s -u %s -- source ~/.bashrc ; %s" % (distribution, user, exec_cmd)
+        arguments = "-d %s -u %s -- source ~/.zshrc ; %s" % (distribution, user, exec_cmd)
         windows_lnk = create_shortcut(
             shortcut_path,
             "wscript",
